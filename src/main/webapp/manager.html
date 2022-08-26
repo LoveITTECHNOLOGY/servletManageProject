@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<section>
+    <div class="box">
+
+        <div class="form">
+            <img src="images/profile.jpg" class="user" alt="">
+            <h2>管理员登录界面</h2>
+            <form  action="/ManagerController" method="post" >
+
+                <div class="inputBx">
+                    <input type="text" name="username" placeholder="用户名" id="username"  >
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="inputBx">
+                    <input type="password" name="password" id="password" placeholder="密码"  >
+                    <img src="images/lock.png" alt="">
+                </div>
+                 <div class="inputBx">
+                    <input type="text" name="verify" placeholder="验证码"/><img src="/verify" /></br>
+                     <style>
+                         img{
+                             margin-left: 170px;
+                             color: black;
+                             background-color: white;
+                         }
+                     </style>
+                 </div>
+                <label class="remeber"><input type="checkbox">请记住</label>
+                <div class="inputBx" >
+                    <input  type="submit" name="submit" value="登录" id="submit" >
+                </div>
+            </form>
+            <div><span style="float: left;"><a href="#">忘记密码 </a></span>
+                <span style="float:right;"><a href="/manager_register.jsp">新用户?注册</a></span></div>
+
+        </div>
+
+    </div>
+</section>
+<!--<script type="text/javascript">-->
+<!--    function validation() {-->
+<!--        let username = document.getElementById("username").value;-->
+<!--        let pass = document.getElementById("password").value;-->
+<!--        if (username != "" && pass != "") {-->
+<!--            document.getElementById("submit").disabled = false;-->
+<!--        } else {-->
+<!--            document.getElementById("submit").disabled = true;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+</body>
+</html>
